@@ -17,6 +17,7 @@ export default function Index() {
 
     useEffect( () => {
       if(isActive) setIsActive(false)
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [pathname])
 
     useLayoutEffect( () => {
