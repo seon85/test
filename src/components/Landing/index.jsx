@@ -28,6 +28,7 @@ export default function Home() {
       x: "-500px",
     })
     requestAnimationFrame(animate);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const animate = () => {
