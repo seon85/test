@@ -17,7 +17,6 @@ export default function Index() {
 
     useEffect( () => {
       if(isActive) setIsActive(false)
-      // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [pathname])
 
     useLayoutEffect( () => {
@@ -31,8 +30,7 @@ export default function Index() {
                 onEnterBack: () => {gsap.to(button.current, {scale: 0, duration: 0.25, ease: "power1.out"},setIsActive(false))}
             }
         })
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
+    })
 
     return (
         <>

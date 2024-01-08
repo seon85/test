@@ -21,8 +21,7 @@ export default function Index({children}) {
             xTo(0);
             yTo(0)
         })
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
+    })
 
     return (
         React.cloneElement(children, {ref:magnetic})
